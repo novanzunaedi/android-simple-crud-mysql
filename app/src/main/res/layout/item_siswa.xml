@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="@dimen/margin_220"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:padding="@dimen/margin_3"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvImage"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardElevation="@dimen/margin_5"
+        app:cardMaxElevation="@dimen/margin_7"
+        app:cardCornerRadius="@dimen/margin_15"
+        android:background="@color/transparent">
+
+    <!--<android.support.v7.widget.CardView-->
+        <!--android:id="@+id/cvImage"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--card_view:cardUseCompatPadding="true"-->
+        <!--card_view:cardElevation="7dp"-->
+        <!--card_view:cardCornerRadius="10dp">-->
+
+
+        <LinearLayout
+            android:id="@+id/LLData"
+            android:layout_marginTop="@dimen/margin_10"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_margin="@dimen/margin_5"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="Nama   : "
+                    android:id="@+id/tlNama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:layout_toRightOf="@+id/tlNama"
+                    android:layout_marginLeft="20dp"
+                    android:text="Anton"
+                    android:id="@+id/tvnama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_margin="@dimen/margin_5"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="Alamat   : "
+                    android:id="@+id/tlAlamat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:layout_toRightOf="@+id/tlAlamat"
+                    android:text="Pasuruan"
+                    android:id="@+id/tvalamat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_margin="@dimen/margin_5"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="No Telp  : "
+                    android:id="@+id/tlTelpon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:layout_toRightOf="@+id/tlTelpon"
+                    android:text="0234343234"
+                    android:id="@+id/tvno_telpon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:layout_marginBottom="3dp"
+        android:layout_above="@+id/rlImage"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rlImage"
+        android:layout_margin="10dp"
+        android:gravity="right"
+        android:elevation="@dimen/margin_5"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_margin="@dimen/margin_10"
+            android:id="@+id/ivDelete"
+            android:padding="3dp"
+            android:src="@drawable/ic_delete"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <ImageView
+            android:layout_margin="@dimen/margin_10"
+            android:id="@+id/ivUpdate"
+            android:layout_toLeftOf="@id/ivDelete"
+            android:src="@drawable/ic_edit"
+            android:padding="3dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
